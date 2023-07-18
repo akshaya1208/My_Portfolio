@@ -99,78 +99,8 @@ nav ul li a:hover::after{
 }
 
 
-.service{
-    background: #101010;
-    width: 100%;
-    padding: 100px 0px;
-}
 
-.title h2{
-     color: white;
-     font-size: 75px;
-     width: 1130px;
-     margin: 30px auto;
-     text-align: center;   
-}
-
-.box{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 400px; 
-}
-.card{
-    height: 365px;
-    width: 335px;
-    padding: 20px 35px;
-    background-attachment: #191919;
-    border-radius: 20px;
-    margin: 15px;
-    position: relative;
-    overflow: hidden;
-    text-align: center;
-}
-
-.card i{
-    font-size: 50px;
-    display: block;
-    text-align: center;
-    margin: 25px 0px;
-    color: #d93f91 ;
-         
-}
-
-h3{
-    color: white;
-    font-size: 23px;
-    margin-bottom: 15px;
-}
-
-.pra p{
-    color: #fcfc;
-    font-size: 16px;
-    line-height: 27px;
-    margin-bottom: 25px; 
-}
-
-.card .button{
-    background-color: #f9004d;
-    color: white;
-    text-decoration: none;
-    border: 2px solid transparent;
-    font-weight: bold;
-    padding: 9px 22 px;
-    border-radius: 30px;
-    transition: .4s;
-}
-
-.card .button:hover{
-    background-color: transparent;
-    border: 2px solid #f9004d;
-    cursor: pointer;
-}
-
-.contact{
+/* .contact{
     width: 100%;
     height: 290px;
     background: #191919;
@@ -241,7 +171,7 @@ footer p:nth-child(2){
     align-items: center;
     justify-content: center;
     background:white;
-    /* border-radius: 50%; */
+    border-radius: 50%;
     margin: 22px 10px;
     color: white;
     text-decoration: none;
@@ -258,4 +188,4 @@ footer p:nth-child(2){
     color: #f9004d;
     bottom: 35px;
     font-size: 14px;
-    }
+    } */

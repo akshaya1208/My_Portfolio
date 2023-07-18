@@ -46,7 +46,7 @@ nav ul li a::after{
     width: 0;
     height: 3px;
     background: rgb(139,135,210);
-    background: linear-gradient(90deg, rgba(139,135,210,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+    background: red;
     position: absolute;
     left: 0;
     bottom: -6px;
@@ -62,12 +62,13 @@ nav ul li a:hover::after{
 .projectcontainer {
     position: relative;
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(2,2fr);
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
     gap: 100px 50px;
     padding-top: 10%;
+    padding-left: 10%;
     /* padding: 100px 50px; */
 }
 
@@ -83,6 +84,7 @@ nav ul li a:hover::after{
     border-radius: 20px;
     transition: 0.5s;
     box-shadow: 0 35px 80px rgba(0, 0, 0, 0.15);
+   
 }
 
 .projectcontainer .card:hover {
@@ -134,7 +136,7 @@ nav ul li a:hover::after{
 .projectcontainer .card .content h2 {
     font-size: 1.5rem;
     font-weight: 700;
-    color: var(--clr);
+    color: rgb(27, 27, 82);
 }
 
 .projectcontainer .card .content p {
@@ -155,7 +157,7 @@ nav ul li a:hover::after{
 .projectcontainer .card .content a:hover {
     opacity: 0.8;
     background-color: #000000;
-    color: aqua;
+    color: rgba(108, 36, 36, 0.963);
 }
 
 @media (max-width: 480px) {
