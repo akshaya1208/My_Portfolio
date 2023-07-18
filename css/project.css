@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins',sans-serif;
+    box-sizing: border-box;
+}
+body {
+    background: #101010;
+    color: black;
+}
+#header {
+    width: 100%;
+    height: 100vh; 
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 40%;
+    flex-wrap: wrap;
+}
+.logo{
+    color: white;
+    float: left;
+    position: relative;
+    margin: 10px 15px 15px 10px;
+}
+.logo span{
+    color: red;
+    margin-left: -2%;
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px ;
+}
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+}
+nav ul li a::after{
+    content: "";
+    width: 0;
+    height: 3px;
+    background: rgb(139,135,210);
+    background: linear-gradient(90deg, rgba(139,135,210,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+nav ul li a:hover::after{
+    width: 100%;
+
+}
+.container{
+    padding: 10px 10%;
+}
+.projectcontainer {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 100px 50px;
+    padding-top: 10%;
+    /* padding: 100px 50px; */
+}
+
+.projectcontainer .card {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 350px;
+    max-width: 100%;
+    height: 300px;
+    background: white;
+    border-radius: 20px;
+    transition: 0.5s;
+    box-shadow: 0 35px 80px rgba(0, 0, 0, 0.15);
+}
+
+.projectcontainer .card:hover {
+    height: 400px;
+}
+
+.projectcontainer .card .img-box {
+    position: absolute;
+    top: 20px;
+    width: 300px;
+    height: 220px;
+    background: #000000;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.projectcontainer .card:hover .img-box {
+    top: -100px;
+    scale: 0.75;
+    box-shadow: 0 15px 45px rgba(0, 0, 0, 0.2);
+}
+
+.projectcontainer .card .img-box img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.projectcontainer .card .content {
+    position: absolute;
+    top: 252px;
+    width: 100%;
+    height: 35px;
+    padding: 0 30px;
+    text-align: center;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.projectcontainer .card:hover .content {
+    top: 130px;
+    height: 250px;
+}
+
+.projectcontainer .card .content h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--clr);
+}
+
+.projectcontainer .card .content p {
+    color: #333;
+}
+
+.projectcontainer .card .content a {
+    position: relative;
+    top: 15px;
+    display: inline-block;
+    padding: 12px 25px;
+    text-decoration: none;
+    background: var(--clr);
+    color: white;
+    font-weight: 500;
+}
+
+.projectcontainer .card .content a:hover {
+    opacity: 0.8;
+    background-color: #000000;
+    color: aqua;
+}
+
+@media (max-width: 480px) {
+    .projectcontainer .card {
+        width: 230px;
+        border-radius: 15px;
+    }
+
+    .projectcontainer .card .img-box {
+        width: 185px;
+        border-radius: 10px;
+    }
+
+    .projectcontainer .card .content p {
+        font-size: 0.8rem;
+    }
+
+    .projectcontainer .card .content a {
+        font-size: 0.9rem;
+    }
+}
